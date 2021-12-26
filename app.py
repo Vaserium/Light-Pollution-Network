@@ -5,14 +5,6 @@ import pandas as pd
 import streamlit as st
 import requests
 from PIL import Image
-import streamlit.components.v1 as components
-from annotated_text import annotated_text
-from st_aggrid import AgGrid
-import json
-import statistics
-import csv
-from datetime import datetime
-from pyowm.commons.exceptions import NotFoundError
 
 # CONTACT
 ########
@@ -30,7 +22,7 @@ with row3_1:
     st.markdown(
         "Hello there! Have you ever spent your weekend watching the night sky and had yourself complaining about how 'it's so hard to the see the stars with all this light pollution in my area' ? Well, this interactive application containing Globe at Night and Unihedron Database data allows you to discover the amount of light pollution which is present in different locations around the world!")
     st.markdown(
-        "You can find the source code in the [Light Pollution Network GitHub Repository](https://github.com/Vaserium)")
+        "You can find the source code in the [Light Pollution Network GitHub Repository](https://github.com/Vaserium/Light-Pollution-Network/blob/main/app.py)")
 
 ####################
 # Making Dataframe And
