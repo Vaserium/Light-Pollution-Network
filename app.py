@@ -153,7 +153,7 @@ def bortle_description(bortle_scale):
 
 def detailed_bortle_description(bortle_scale):
     if bortle_scale == 1:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader("- Milky Way is visible with great detail")
         column3.subheader("- M33 (Pinwheel Galaxy) is very bright")
         column3.subheader("- Zodiacal lights visible")
@@ -162,7 +162,7 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 2:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader("- Summer Milky Way is visible with great detail")
         column3.subheader("- M33(Pinwheel Galaxy) and other globular clusters are visible through direct vision")
         column3.subheader("- Zodiacal lights are bright, this causes feeble shadows after dark")
@@ -171,7 +171,7 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 3:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader("- Milky Way is visible with an outlined appearance")
         column3.subheader("- M31(Andromeda Galaxy) is visible, and other globular clusters are noticeable")
         column3.subheader("- Zodiacal lights are very bright during Spring and Autumn")
@@ -180,7 +180,7 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 4:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader(
             "- Milky Way is faint with most of it's details lost, but the structure is visible above the horizon")
         column3.subheader("- M31(Andromeda Galaxy) is still pretty visible")
@@ -199,7 +199,7 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 6 or bortle_scale == 7:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader(
             "- Milky Way seems partially visible overhead, certain chunks aren't visible due to light pollution. Or it is invisible")
         column3.subheader(
@@ -210,7 +210,7 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 8 or bortle_scale == 9:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
+        column1, column2, column3 = st.columns((1.5, 1, 1))
         column3.subheader("- Milky Way is 100% invisible")
         column3.subheader("- Plelades Cluster is visible, and some other faint objects are visible")
         column3.subheader("- Dimmest constellations are missing key stars")
