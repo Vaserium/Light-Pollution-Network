@@ -10,7 +10,7 @@ from PIL import Image
 ########
 
 st.set_page_config(layout="wide", page_title='Light Pollution Network')
-row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns((3, .2, 0.7, .1))
+row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns((3, .2, 0.65, .1))
 row0_1.title('Light Pollution Network')
 with row0_2:
     st.write('')
