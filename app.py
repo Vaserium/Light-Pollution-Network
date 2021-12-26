@@ -189,10 +189,8 @@ def detailed_bortle_description(bortle_scale):
         image = Image.open('Bortle_Class.png')
         column1.image(image, caption='Credit: OPT Telescopes', width=940)
     elif bortle_scale == 5:
-        column1, column2, column3, column4 = st.columns((0.6, 2.1, 0.8, 1))
-        # column3.subheader("- Milky Way is extremely faint, and is completely lost alongside the horizon")
-        st.markdown("<h1 style='text-align: right; color: Tomato;'>- Milky Way is extremely faint, and is completely lost alongside the horizon</h1>",
-                    unsafe_allow_html=True)
+        column1, column2, column3, column4 = st.columns((0.6, 2.6, 0.8, 1))
+        column3.subheader("- Milky Way is extremely faint, and is completely lost alongside the horizon")
         column3.subheader(
             "- Outline of M31(Andromeda Galaxy) and the radiance of the Orion Nebula are distinguishable")
         column3.subheader("- Zodiacal lights are pretty faint during Spring and Autumn")
